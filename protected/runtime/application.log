@@ -1,0 +1,3031 @@
+2013/02/27 07:45:06 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 07:45:06 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 07:47:44 [trace] [vardump] Users#1
+(
+    [password_repeat] => null
+    [CActiveRecord:_md] => CActiveRecordMetaData#2
+    (
+        [tableSchema] => CMysqlTableSchema#3
+        (
+            [schemaName] => null
+            [name] => 'users'
+            [rawName] => '`users`'
+            [primaryKey] => 'id'
+            [sequenceName] => ''
+            [foreignKeys] => array()
+            [columns] => array
+            (
+                'id' => CMysqlColumnSchema#4
+                (
+                    [name] => 'id'
+                    [rawName] => '`id`'
+                    [allowNull] => false
+                    [dbType] => 'int(11)'
+                    [type] => 'integer'
+                    [defaultValue] => null
+                    [size] => 11
+                    [precision] => 11
+                    [scale] => null
+                    [isPrimaryKey] => true
+                    [isForeignKey] => false
+                    [autoIncrement] => true
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'usuario' => CMysqlColumnSchema#5
+                (
+                    [name] => 'usuario'
+                    [rawName] => '`usuario`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'password' => CMysqlColumnSchema#6
+                (
+                    [name] => 'password'
+                    [rawName] => '`password`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(200)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 200
+                    [precision] => 200
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'email' => CMysqlColumnSchema#7
+                (
+                    [name] => 'email'
+                    [rawName] => '`email`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'tipo' => CMysqlColumnSchema#8
+                (
+                    [name] => 'tipo'
+                    [rawName] => '`tipo`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'operador' => CMysqlColumnSchema#9
+                (
+                    [name] => 'operador'
+                    [rawName] => '`operador`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'lastlogin' => CMysqlColumnSchema#10
+                (
+                    [name] => 'lastlogin'
+                    [rawName] => '`lastlogin`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'creado' => CMysqlColumnSchema#11
+                (
+                    [name] => 'creado'
+                    [rawName] => '`creado`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'actualizado' => CMysqlColumnSchema#12
+                (
+                    [name] => 'actualizado'
+                    [rawName] => '`actualizado`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+            )
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+        [columns] => array
+        (
+            'id' => CMysqlColumnSchema#4(...)
+            'usuario' => CMysqlColumnSchema#5(...)
+            'password' => CMysqlColumnSchema#6(...)
+            'email' => CMysqlColumnSchema#7(...)
+            'tipo' => CMysqlColumnSchema#8(...)
+            'operador' => CMysqlColumnSchema#9(...)
+            'lastlogin' => CMysqlColumnSchema#10(...)
+            'creado' => CMysqlColumnSchema#11(...)
+            'actualizado' => CMysqlColumnSchema#12(...)
+        )
+        [relations] => array()
+        [attributeDefaults] => array()
+        [CActiveRecordMetaData:_model] => Users#13
+        (
+            [password_repeat] => null
+            [CActiveRecord:_md] => CActiveRecordMetaData#2(...)
+            [CActiveRecord:_new] => false
+            [CActiveRecord:_attributes] => array()
+            [CActiveRecord:_related] => array()
+            [CActiveRecord:_c] => null
+            [CActiveRecord:_pk] => null
+            [CActiveRecord:_alias] => 't'
+            [CModel:_errors] => array()
+            [CModel:_validators] => null
+            [CModel:_scenario] => ''
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+    )
+    [CActiveRecord:_new] => false
+    [CActiveRecord:_attributes] => array
+    (
+        'id' => '16'
+        'usuario' => 'enriquesalazar'
+        'password' => 'e10adc3949ba59abbe56e057f20f883e'
+        'email' => 'enriquesalazar@fondoadaptacion.gov.co'
+        'tipo' => 'owner'
+        'operador' => 'fonada'
+        'lastlogin' => '2013-02-27 07:44:26'
+        'creado' => '2013-01-23 08:50:07'
+        'actualizado' => '2013-01-23 09:03:57'
+    )
+    [CActiveRecord:_related] => array()
+    [CActiveRecord:_c] => null
+    [CActiveRecord:_pk] => '16'
+    [CActiveRecord:_alias] => 't'
+    [CModel:_errors] => array()
+    [CModel:_validators] => null
+    [CModel:_scenario] => 'update'
+    [CComponent:_e] => null
+    [CComponent:_m] => null
+)
+in /home/content/39/9612339/html/modulos/vivienda/protected/components/UserIdentity.php (38)
+in /home/content/39/9612339/html/modulos/vivienda/protected/models/LoginForm.php (54)
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/SiteController.php (94)
+2013/02/27 07:47:45 [trace] [system.caching.CApcCache] Saving "Yii.CStatePersister./home/content/39/9612339/html/modulos/vivienda/protected/runtime/state.bin" to cache
+in /home/content/39/9612339/html/modulos/vivienda/protected/models/LoginForm.php (73)
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/SiteController.php (94)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 07:47:45 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 07:47:45 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 07:47:57 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 07:47:57 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 07:48:17 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 07:48:17 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 07:51:03 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 07:51:03 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 08:51:08 [trace] [system.caching.CApcCache] Saving "Yii.CStatePersister./home/content/39/9612339/html/modulos/vivienda/protected/runtime/state.bin" to cache
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 08:51:09 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 08:51:09 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 08:51:21 [trace] [system.caching.CApcCache] Serving "Yii.CStatePersister./home/content/39/9612339/html/modulos/vivienda/protected/runtime/state.bin" from cache
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 08:51:21 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 08:51:21 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 08:51:33 [trace] [system.caching.CApcCache] Serving "Yii.CStatePersister./home/content/39/9612339/html/modulos/vivienda/protected/runtime/state.bin" from cache
+in /home/content/39/9612339/html/modulos/vivienda/protected/views/site/index.php (8)
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/SiteController.php (32)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 08:52:04 [trace] [vardump] Users#1
+(
+    [password_repeat] => null
+    [CActiveRecord:_md] => CActiveRecordMetaData#2
+    (
+        [tableSchema] => CMysqlTableSchema#3
+        (
+            [schemaName] => null
+            [name] => 'users'
+            [rawName] => '`users`'
+            [primaryKey] => 'id'
+            [sequenceName] => ''
+            [foreignKeys] => array()
+            [columns] => array
+            (
+                'id' => CMysqlColumnSchema#4
+                (
+                    [name] => 'id'
+                    [rawName] => '`id`'
+                    [allowNull] => false
+                    [dbType] => 'int(11)'
+                    [type] => 'integer'
+                    [defaultValue] => null
+                    [size] => 11
+                    [precision] => 11
+                    [scale] => null
+                    [isPrimaryKey] => true
+                    [isForeignKey] => false
+                    [autoIncrement] => true
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'usuario' => CMysqlColumnSchema#5
+                (
+                    [name] => 'usuario'
+                    [rawName] => '`usuario`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'password' => CMysqlColumnSchema#6
+                (
+                    [name] => 'password'
+                    [rawName] => '`password`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(200)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 200
+                    [precision] => 200
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'email' => CMysqlColumnSchema#7
+                (
+                    [name] => 'email'
+                    [rawName] => '`email`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'tipo' => CMysqlColumnSchema#8
+                (
+                    [name] => 'tipo'
+                    [rawName] => '`tipo`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'operador' => CMysqlColumnSchema#9
+                (
+                    [name] => 'operador'
+                    [rawName] => '`operador`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'lastlogin' => CMysqlColumnSchema#10
+                (
+                    [name] => 'lastlogin'
+                    [rawName] => '`lastlogin`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'creado' => CMysqlColumnSchema#11
+                (
+                    [name] => 'creado'
+                    [rawName] => '`creado`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'actualizado' => CMysqlColumnSchema#12
+                (
+                    [name] => 'actualizado'
+                    [rawName] => '`actualizado`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+            )
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+        [columns] => array
+        (
+            'id' => CMysqlColumnSchema#4(...)
+            'usuario' => CMysqlColumnSchema#5(...)
+            'password' => CMysqlColumnSchema#6(...)
+            'email' => CMysqlColumnSchema#7(...)
+            'tipo' => CMysqlColumnSchema#8(...)
+            'operador' => CMysqlColumnSchema#9(...)
+            'lastlogin' => CMysqlColumnSchema#10(...)
+            'creado' => CMysqlColumnSchema#11(...)
+            'actualizado' => CMysqlColumnSchema#12(...)
+        )
+        [relations] => array()
+        [attributeDefaults] => array()
+        [CActiveRecordMetaData:_model] => Users#13
+        (
+            [password_repeat] => null
+            [CActiveRecord:_md] => CActiveRecordMetaData#2(...)
+            [CActiveRecord:_new] => false
+            [CActiveRecord:_attributes] => array()
+            [CActiveRecord:_related] => array()
+            [CActiveRecord:_c] => null
+            [CActiveRecord:_pk] => null
+            [CActiveRecord:_alias] => 't'
+            [CModel:_errors] => array()
+            [CModel:_validators] => null
+            [CModel:_scenario] => ''
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+    )
+    [CActiveRecord:_new] => false
+    [CActiveRecord:_attributes] => array
+    (
+        'id' => '16'
+        'usuario' => 'enriquesalazar'
+        'password' => 'e10adc3949ba59abbe56e057f20f883e'
+        'email' => 'enriquesalazar@fondoadaptacion.gov.co'
+        'tipo' => 'owner'
+        'operador' => 'fonada'
+        'lastlogin' => '2013-02-27 07:47:44'
+        'creado' => '2013-01-23 08:50:07'
+        'actualizado' => '2013-01-23 09:03:57'
+    )
+    [CActiveRecord:_related] => array()
+    [CActiveRecord:_c] => null
+    [CActiveRecord:_pk] => '16'
+    [CActiveRecord:_alias] => 't'
+    [CModel:_errors] => array()
+    [CModel:_validators] => null
+    [CModel:_scenario] => 'update'
+    [CComponent:_e] => null
+    [CComponent:_m] => null
+)
+in /home/content/39/9612339/html/modulos/vivienda/protected/components/UserIdentity.php (38)
+in /home/content/39/9612339/html/modulos/vivienda/protected/models/LoginForm.php (54)
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/SiteController.php (94)
+2013/02/27 08:52:04 [trace] [system.caching.CApcCache] Serving "Yii.CStatePersister./home/content/39/9612339/html/modulos/vivienda/protected/runtime/state.bin" from cache
+in /home/content/39/9612339/html/modulos/vivienda/protected/models/LoginForm.php (73)
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/SiteController.php (94)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 08:52:48 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 08:52:48 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 08:53:08 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 08:53:08 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 08:55:15 [trace] [vardump] Users#1
+(
+    [password_repeat] => null
+    [CActiveRecord:_md] => CActiveRecordMetaData#2
+    (
+        [tableSchema] => CMysqlTableSchema#3
+        (
+            [schemaName] => null
+            [name] => 'users'
+            [rawName] => '`users`'
+            [primaryKey] => 'id'
+            [sequenceName] => ''
+            [foreignKeys] => array()
+            [columns] => array
+            (
+                'id' => CMysqlColumnSchema#4
+                (
+                    [name] => 'id'
+                    [rawName] => '`id`'
+                    [allowNull] => false
+                    [dbType] => 'int(11)'
+                    [type] => 'integer'
+                    [defaultValue] => null
+                    [size] => 11
+                    [precision] => 11
+                    [scale] => null
+                    [isPrimaryKey] => true
+                    [isForeignKey] => false
+                    [autoIncrement] => true
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'usuario' => CMysqlColumnSchema#5
+                (
+                    [name] => 'usuario'
+                    [rawName] => '`usuario`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'password' => CMysqlColumnSchema#6
+                (
+                    [name] => 'password'
+                    [rawName] => '`password`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(200)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 200
+                    [precision] => 200
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'email' => CMysqlColumnSchema#7
+                (
+                    [name] => 'email'
+                    [rawName] => '`email`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'tipo' => CMysqlColumnSchema#8
+                (
+                    [name] => 'tipo'
+                    [rawName] => '`tipo`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'operador' => CMysqlColumnSchema#9
+                (
+                    [name] => 'operador'
+                    [rawName] => '`operador`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'lastlogin' => CMysqlColumnSchema#10
+                (
+                    [name] => 'lastlogin'
+                    [rawName] => '`lastlogin`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'creado' => CMysqlColumnSchema#11
+                (
+                    [name] => 'creado'
+                    [rawName] => '`creado`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'actualizado' => CMysqlColumnSchema#12
+                (
+                    [name] => 'actualizado'
+                    [rawName] => '`actualizado`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+            )
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+        [columns] => array
+        (
+            'id' => CMysqlColumnSchema#4(...)
+            'usuario' => CMysqlColumnSchema#5(...)
+            'password' => CMysqlColumnSchema#6(...)
+            'email' => CMysqlColumnSchema#7(...)
+            'tipo' => CMysqlColumnSchema#8(...)
+            'operador' => CMysqlColumnSchema#9(...)
+            'lastlogin' => CMysqlColumnSchema#10(...)
+            'creado' => CMysqlColumnSchema#11(...)
+            'actualizado' => CMysqlColumnSchema#12(...)
+        )
+        [relations] => array()
+        [attributeDefaults] => array()
+        [CActiveRecordMetaData:_model] => Users#13
+        (
+            [password_repeat] => null
+            [CActiveRecord:_md] => CActiveRecordMetaData#2(...)
+            [CActiveRecord:_new] => false
+            [CActiveRecord:_attributes] => array()
+            [CActiveRecord:_related] => array()
+            [CActiveRecord:_c] => null
+            [CActiveRecord:_pk] => null
+            [CActiveRecord:_alias] => 't'
+            [CModel:_errors] => array()
+            [CModel:_validators] => null
+            [CModel:_scenario] => ''
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+    )
+    [CActiveRecord:_new] => false
+    [CActiveRecord:_attributes] => array
+    (
+        'id' => '16'
+        'usuario' => 'enriquesalazar'
+        'password' => 'e10adc3949ba59abbe56e057f20f883e'
+        'email' => 'enriquesalazar@fondoadaptacion.gov.co'
+        'tipo' => 'owner'
+        'operador' => 'fonada'
+        'lastlogin' => '2013-02-27 08:52:04'
+        'creado' => '2013-01-23 08:50:07'
+        'actualizado' => '2013-01-23 09:03:57'
+    )
+    [CActiveRecord:_related] => array()
+    [CActiveRecord:_c] => null
+    [CActiveRecord:_pk] => '16'
+    [CActiveRecord:_alias] => 't'
+    [CModel:_errors] => array()
+    [CModel:_validators] => null
+    [CModel:_scenario] => 'update'
+    [CComponent:_e] => null
+    [CComponent:_m] => null
+)
+in /home/content/39/9612339/html/modulos/vivienda/protected/components/UserIdentity.php (38)
+in /home/content/39/9612339/html/modulos/vivienda/protected/models/LoginForm.php (54)
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/SiteController.php (94)
+2013/02/27 08:55:15 [trace] [system.caching.CApcCache] Saving "Yii.CStatePersister./home/content/39/9612339/html/modulos/vivienda/protected/runtime/state.bin" to cache
+in /home/content/39/9612339/html/modulos/vivienda/protected/models/LoginForm.php (73)
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/SiteController.php (94)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 08:55:24 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 08:55:24 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 08:55:27 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/02/27 08:55:27 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/04 13:10:19 [trace] [vardump] Users#1
+(
+    [password_repeat] => null
+    [CActiveRecord:_md] => CActiveRecordMetaData#2
+    (
+        [tableSchema] => CMysqlTableSchema#3
+        (
+            [schemaName] => null
+            [name] => 'users'
+            [rawName] => '`users`'
+            [primaryKey] => 'id'
+            [sequenceName] => ''
+            [foreignKeys] => array()
+            [columns] => array
+            (
+                'id' => CMysqlColumnSchema#4
+                (
+                    [name] => 'id'
+                    [rawName] => '`id`'
+                    [allowNull] => false
+                    [dbType] => 'int(11)'
+                    [type] => 'integer'
+                    [defaultValue] => null
+                    [size] => 11
+                    [precision] => 11
+                    [scale] => null
+                    [isPrimaryKey] => true
+                    [isForeignKey] => false
+                    [autoIncrement] => true
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'usuario' => CMysqlColumnSchema#5
+                (
+                    [name] => 'usuario'
+                    [rawName] => '`usuario`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'password' => CMysqlColumnSchema#6
+                (
+                    [name] => 'password'
+                    [rawName] => '`password`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(200)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 200
+                    [precision] => 200
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'email' => CMysqlColumnSchema#7
+                (
+                    [name] => 'email'
+                    [rawName] => '`email`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'tipo' => CMysqlColumnSchema#8
+                (
+                    [name] => 'tipo'
+                    [rawName] => '`tipo`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'operador' => CMysqlColumnSchema#9
+                (
+                    [name] => 'operador'
+                    [rawName] => '`operador`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'lastlogin' => CMysqlColumnSchema#10
+                (
+                    [name] => 'lastlogin'
+                    [rawName] => '`lastlogin`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'creado' => CMysqlColumnSchema#11
+                (
+                    [name] => 'creado'
+                    [rawName] => '`creado`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'actualizado' => CMysqlColumnSchema#12
+                (
+                    [name] => 'actualizado'
+                    [rawName] => '`actualizado`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+            )
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+        [columns] => array
+        (
+            'id' => CMysqlColumnSchema#4(...)
+            'usuario' => CMysqlColumnSchema#5(...)
+            'password' => CMysqlColumnSchema#6(...)
+            'email' => CMysqlColumnSchema#7(...)
+            'tipo' => CMysqlColumnSchema#8(...)
+            'operador' => CMysqlColumnSchema#9(...)
+            'lastlogin' => CMysqlColumnSchema#10(...)
+            'creado' => CMysqlColumnSchema#11(...)
+            'actualizado' => CMysqlColumnSchema#12(...)
+        )
+        [relations] => array()
+        [attributeDefaults] => array()
+        [CActiveRecordMetaData:_model] => Users#13
+        (
+            [password_repeat] => null
+            [CActiveRecord:_md] => CActiveRecordMetaData#2(...)
+            [CActiveRecord:_new] => false
+            [CActiveRecord:_attributes] => array()
+            [CActiveRecord:_related] => array()
+            [CActiveRecord:_c] => null
+            [CActiveRecord:_pk] => null
+            [CActiveRecord:_alias] => 't'
+            [CModel:_errors] => array()
+            [CModel:_validators] => null
+            [CModel:_scenario] => ''
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+    )
+    [CActiveRecord:_new] => false
+    [CActiveRecord:_attributes] => array
+    (
+        'id' => '16'
+        'usuario' => 'enriquesalazar'
+        'password' => 'e10adc3949ba59abbe56e057f20f883e'
+        'email' => 'enriquesalazar@fondoadaptacion.gov.co'
+        'tipo' => 'owner'
+        'operador' => 'fonada'
+        'lastlogin' => '2013-02-27 08:55:15'
+        'creado' => '2013-01-23 08:50:07'
+        'actualizado' => '2013-01-23 09:03:57'
+    )
+    [CActiveRecord:_related] => array()
+    [CActiveRecord:_c] => null
+    [CActiveRecord:_pk] => '16'
+    [CActiveRecord:_alias] => 't'
+    [CModel:_errors] => array()
+    [CModel:_validators] => null
+    [CModel:_scenario] => 'update'
+    [CComponent:_e] => null
+    [CComponent:_m] => null
+)
+in /home/content/39/9612339/html/modulos/vivienda/protected/components/UserIdentity.php (38)
+in /home/content/39/9612339/html/modulos/vivienda/protected/models/LoginForm.php (54)
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/SiteController.php (94)
+2013/03/04 13:10:20 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/04 13:10:20 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/04 14:20:35 [trace] [vardump] Users#1
+(
+    [password_repeat] => null
+    [CActiveRecord:_md] => CActiveRecordMetaData#2
+    (
+        [tableSchema] => CMysqlTableSchema#3
+        (
+            [schemaName] => null
+            [name] => 'users'
+            [rawName] => '`users`'
+            [primaryKey] => 'id'
+            [sequenceName] => ''
+            [foreignKeys] => array()
+            [columns] => array
+            (
+                'id' => CMysqlColumnSchema#4
+                (
+                    [name] => 'id'
+                    [rawName] => '`id`'
+                    [allowNull] => false
+                    [dbType] => 'int(11)'
+                    [type] => 'integer'
+                    [defaultValue] => null
+                    [size] => 11
+                    [precision] => 11
+                    [scale] => null
+                    [isPrimaryKey] => true
+                    [isForeignKey] => false
+                    [autoIncrement] => true
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'usuario' => CMysqlColumnSchema#5
+                (
+                    [name] => 'usuario'
+                    [rawName] => '`usuario`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'password' => CMysqlColumnSchema#6
+                (
+                    [name] => 'password'
+                    [rawName] => '`password`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(200)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 200
+                    [precision] => 200
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'email' => CMysqlColumnSchema#7
+                (
+                    [name] => 'email'
+                    [rawName] => '`email`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'tipo' => CMysqlColumnSchema#8
+                (
+                    [name] => 'tipo'
+                    [rawName] => '`tipo`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'operador' => CMysqlColumnSchema#9
+                (
+                    [name] => 'operador'
+                    [rawName] => '`operador`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'lastlogin' => CMysqlColumnSchema#10
+                (
+                    [name] => 'lastlogin'
+                    [rawName] => '`lastlogin`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'creado' => CMysqlColumnSchema#11
+                (
+                    [name] => 'creado'
+                    [rawName] => '`creado`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'actualizado' => CMysqlColumnSchema#12
+                (
+                    [name] => 'actualizado'
+                    [rawName] => '`actualizado`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+            )
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+        [columns] => array
+        (
+            'id' => CMysqlColumnSchema#4(...)
+            'usuario' => CMysqlColumnSchema#5(...)
+            'password' => CMysqlColumnSchema#6(...)
+            'email' => CMysqlColumnSchema#7(...)
+            'tipo' => CMysqlColumnSchema#8(...)
+            'operador' => CMysqlColumnSchema#9(...)
+            'lastlogin' => CMysqlColumnSchema#10(...)
+            'creado' => CMysqlColumnSchema#11(...)
+            'actualizado' => CMysqlColumnSchema#12(...)
+        )
+        [relations] => array()
+        [attributeDefaults] => array()
+        [CActiveRecordMetaData:_model] => Users#13
+        (
+            [password_repeat] => null
+            [CActiveRecord:_md] => CActiveRecordMetaData#2(...)
+            [CActiveRecord:_new] => false
+            [CActiveRecord:_attributes] => array()
+            [CActiveRecord:_related] => array()
+            [CActiveRecord:_c] => null
+            [CActiveRecord:_pk] => null
+            [CActiveRecord:_alias] => 't'
+            [CModel:_errors] => array()
+            [CModel:_validators] => null
+            [CModel:_scenario] => ''
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+    )
+    [CActiveRecord:_new] => false
+    [CActiveRecord:_attributes] => array
+    (
+        'id' => '16'
+        'usuario' => 'enriquesalazar'
+        'password' => 'e10adc3949ba59abbe56e057f20f883e'
+        'email' => 'enriquesalazar@fondoadaptacion.gov.co'
+        'tipo' => 'owner'
+        'operador' => 'fonada'
+        'lastlogin' => '2013-03-04 13:10:19'
+        'creado' => '2013-01-23 08:50:07'
+        'actualizado' => '2013-01-23 09:03:57'
+    )
+    [CActiveRecord:_related] => array()
+    [CActiveRecord:_c] => null
+    [CActiveRecord:_pk] => '16'
+    [CActiveRecord:_alias] => 't'
+    [CModel:_errors] => array()
+    [CModel:_validators] => null
+    [CModel:_scenario] => 'update'
+    [CComponent:_e] => null
+    [CComponent:_m] => null
+)
+in /home/content/39/9612339/html/modulos/vivienda/protected/components/UserIdentity.php (38)
+in /home/content/39/9612339/html/modulos/vivienda/protected/models/LoginForm.php (54)
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/SiteController.php (94)
+2013/03/04 14:20:46 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/04 14:20:47 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/04 14:47:49 [trace] [vardump] Users#1
+(
+    [password_repeat] => null
+    [CActiveRecord:_md] => CActiveRecordMetaData#2
+    (
+        [tableSchema] => CMysqlTableSchema#3
+        (
+            [schemaName] => null
+            [name] => 'users'
+            [rawName] => '`users`'
+            [primaryKey] => 'id'
+            [sequenceName] => ''
+            [foreignKeys] => array()
+            [columns] => array
+            (
+                'id' => CMysqlColumnSchema#4
+                (
+                    [name] => 'id'
+                    [rawName] => '`id`'
+                    [allowNull] => false
+                    [dbType] => 'int(11)'
+                    [type] => 'integer'
+                    [defaultValue] => null
+                    [size] => 11
+                    [precision] => 11
+                    [scale] => null
+                    [isPrimaryKey] => true
+                    [isForeignKey] => false
+                    [autoIncrement] => true
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'usuario' => CMysqlColumnSchema#5
+                (
+                    [name] => 'usuario'
+                    [rawName] => '`usuario`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'password' => CMysqlColumnSchema#6
+                (
+                    [name] => 'password'
+                    [rawName] => '`password`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(200)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 200
+                    [precision] => 200
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'email' => CMysqlColumnSchema#7
+                (
+                    [name] => 'email'
+                    [rawName] => '`email`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'tipo' => CMysqlColumnSchema#8
+                (
+                    [name] => 'tipo'
+                    [rawName] => '`tipo`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'operador' => CMysqlColumnSchema#9
+                (
+                    [name] => 'operador'
+                    [rawName] => '`operador`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'lastlogin' => CMysqlColumnSchema#10
+                (
+                    [name] => 'lastlogin'
+                    [rawName] => '`lastlogin`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'creado' => CMysqlColumnSchema#11
+                (
+                    [name] => 'creado'
+                    [rawName] => '`creado`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'actualizado' => CMysqlColumnSchema#12
+                (
+                    [name] => 'actualizado'
+                    [rawName] => '`actualizado`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+            )
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+        [columns] => array
+        (
+            'id' => CMysqlColumnSchema#4(...)
+            'usuario' => CMysqlColumnSchema#5(...)
+            'password' => CMysqlColumnSchema#6(...)
+            'email' => CMysqlColumnSchema#7(...)
+            'tipo' => CMysqlColumnSchema#8(...)
+            'operador' => CMysqlColumnSchema#9(...)
+            'lastlogin' => CMysqlColumnSchema#10(...)
+            'creado' => CMysqlColumnSchema#11(...)
+            'actualizado' => CMysqlColumnSchema#12(...)
+        )
+        [relations] => array()
+        [attributeDefaults] => array()
+        [CActiveRecordMetaData:_model] => Users#13
+        (
+            [password_repeat] => null
+            [CActiveRecord:_md] => CActiveRecordMetaData#2(...)
+            [CActiveRecord:_new] => false
+            [CActiveRecord:_attributes] => array()
+            [CActiveRecord:_related] => array()
+            [CActiveRecord:_c] => null
+            [CActiveRecord:_pk] => null
+            [CActiveRecord:_alias] => 't'
+            [CModel:_errors] => array()
+            [CModel:_validators] => null
+            [CModel:_scenario] => ''
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+    )
+    [CActiveRecord:_new] => false
+    [CActiveRecord:_attributes] => array
+    (
+        'id' => '16'
+        'usuario' => 'enriquesalazar'
+        'password' => 'e10adc3949ba59abbe56e057f20f883e'
+        'email' => 'enriquesalazar@fondoadaptacion.gov.co'
+        'tipo' => 'owner'
+        'operador' => 'fonada'
+        'lastlogin' => '2013-03-04 14:20:35'
+        'creado' => '2013-01-23 08:50:07'
+        'actualizado' => '2013-01-23 09:03:57'
+    )
+    [CActiveRecord:_related] => array()
+    [CActiveRecord:_c] => null
+    [CActiveRecord:_pk] => '16'
+    [CActiveRecord:_alias] => 't'
+    [CModel:_errors] => array()
+    [CModel:_validators] => null
+    [CModel:_scenario] => 'update'
+    [CComponent:_e] => null
+    [CComponent:_m] => null
+)
+in /home/content/39/9612339/html/modulos/vivienda/protected/components/UserIdentity.php (38)
+in /home/content/39/9612339/html/modulos/vivienda/protected/models/LoginForm.php (54)
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/SiteController.php (94)
+2013/03/04 14:59:49 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/04 14:59:49 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/04 14:59:49 [error] [exception.CException] exception 'CException' with message 'Propiedad "OpViviendas"."ref_mejora" no se encuentra definida.' in /home/content/39/9612339/html/modulos/yii/framework/yiilite.php:600
+Stack trace:
+#0 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(6912): CComponent->__get('ref_mejora')
+#1 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(5553): CActiveRecord->__get('ref_mejora')
+#2 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(5376): CHtml::resolveValue(Object(OpViviendas), 'ref_mejora')
+#3 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(5077): CHtml::activeInputField('text', Object(OpViviendas), 'ref_mejora', Array)
+#4 /home/content/39/9612339/html/modulos/yii/framework/web/widgets/CActiveForm.php(657): CHtml::activeTextField(Object(OpViviendas), 'ref_mejora', Array)
+#5 /home/content/39/9612339/html/modulos/vivienda/protected/views/opViviendas/_form.php(144): CActiveForm->textField(Object(OpViviendas), 'ref_mejora', Array)
+#6 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(3252): require('/home/content/3...')
+#7 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(3231): CBaseController->renderInternal('/home/content/3...', Array, true)
+#8 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(3655): CBaseController->renderFile('/home/content/3...', Array, true)
+#9 /home/content/39/9612339/html/modulos/vivienda/protected/views/opViviendas/update.php(206): CController->renderPartial('_form', Array)
+#10 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(3252): require('/home/content/3...')
+#11 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(3231): CBaseController->renderInternal('/home/content/3...', Array, true)
+#12 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(3655): CBaseController->renderFile('/home/content/3...', Array, true)
+#13 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(3623): CController->renderPartial('update', Array, true)
+#14 /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php(131): CController->render('update', Array)
+#15 [internal function]: OpViviendasController->actionUpdate('12')
+#16 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(3872): ReflectionMethod->invokeArgs(Object(OpViviendasController), Array)
+#17 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(3889): CAction->runWithParamsInternal(Object(OpViviendasController), Object(ReflectionMethod), Array)
+#18 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(3403): CInlineAction->runWithParams(Array)
+#19 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(6405): CController->runAction(Object(CInlineAction))
+#20 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(6414): CFilterChain->run()
+#21 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(3781): CFilter->filter(Object(CFilterChain))
+#22 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(6447): CController->filterAccessControl(Object(CFilterChain))
+#23 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(6402): CInlineFilter->filter(Object(CFilterChain))
+#24 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(3393): CFilterChain->run()
+#25 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(3378): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(1725): CController->run('update')
+#27 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(1645): CWebApplication->runController('opViviendas/upd...')
+#28 /home/content/39/9612339/html/modulos/yii/framework/yiilite.php(1170): CWebApplication->processRequest()
+#29 /home/content/39/9612339/html/modulos/vivienda/index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/modulos/vivienda/index.php?r=opViviendas/update&id=12
+HTTP_REFERER=http://www.fondoadaptacion.gov.co/modulos/vivienda/index.php?r=opHogares/admin&id=2
+---
+2013/03/04 15:05:24 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/04 15:05:24 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/05 12:52:27 [trace] [vardump] Users#1
+(
+    [password_repeat] => null
+    [CActiveRecord:_md] => CActiveRecordMetaData#2
+    (
+        [tableSchema] => CMysqlTableSchema#3
+        (
+            [schemaName] => null
+            [name] => 'users'
+            [rawName] => '`users`'
+            [primaryKey] => 'id'
+            [sequenceName] => ''
+            [foreignKeys] => array()
+            [columns] => array
+            (
+                'id' => CMysqlColumnSchema#4
+                (
+                    [name] => 'id'
+                    [rawName] => '`id`'
+                    [allowNull] => false
+                    [dbType] => 'int(11)'
+                    [type] => 'integer'
+                    [defaultValue] => null
+                    [size] => 11
+                    [precision] => 11
+                    [scale] => null
+                    [isPrimaryKey] => true
+                    [isForeignKey] => false
+                    [autoIncrement] => true
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'usuario' => CMysqlColumnSchema#5
+                (
+                    [name] => 'usuario'
+                    [rawName] => '`usuario`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'password' => CMysqlColumnSchema#6
+                (
+                    [name] => 'password'
+                    [rawName] => '`password`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(200)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 200
+                    [precision] => 200
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'email' => CMysqlColumnSchema#7
+                (
+                    [name] => 'email'
+                    [rawName] => '`email`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'tipo' => CMysqlColumnSchema#8
+                (
+                    [name] => 'tipo'
+                    [rawName] => '`tipo`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'operador' => CMysqlColumnSchema#9
+                (
+                    [name] => 'operador'
+                    [rawName] => '`operador`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'lastlogin' => CMysqlColumnSchema#10
+                (
+                    [name] => 'lastlogin'
+                    [rawName] => '`lastlogin`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'creado' => CMysqlColumnSchema#11
+                (
+                    [name] => 'creado'
+                    [rawName] => '`creado`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'actualizado' => CMysqlColumnSchema#12
+                (
+                    [name] => 'actualizado'
+                    [rawName] => '`actualizado`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+            )
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+        [columns] => array
+        (
+            'id' => CMysqlColumnSchema#4(...)
+            'usuario' => CMysqlColumnSchema#5(...)
+            'password' => CMysqlColumnSchema#6(...)
+            'email' => CMysqlColumnSchema#7(...)
+            'tipo' => CMysqlColumnSchema#8(...)
+            'operador' => CMysqlColumnSchema#9(...)
+            'lastlogin' => CMysqlColumnSchema#10(...)
+            'creado' => CMysqlColumnSchema#11(...)
+            'actualizado' => CMysqlColumnSchema#12(...)
+        )
+        [relations] => array()
+        [attributeDefaults] => array()
+        [CActiveRecordMetaData:_model] => Users#13
+        (
+            [password_repeat] => null
+            [CActiveRecord:_md] => CActiveRecordMetaData#2(...)
+            [CActiveRecord:_new] => false
+            [CActiveRecord:_attributes] => array()
+            [CActiveRecord:_related] => array()
+            [CActiveRecord:_c] => null
+            [CActiveRecord:_pk] => null
+            [CActiveRecord:_alias] => 't'
+            [CModel:_errors] => array()
+            [CModel:_validators] => null
+            [CModel:_scenario] => ''
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+    )
+    [CActiveRecord:_new] => false
+    [CActiveRecord:_attributes] => array
+    (
+        'id' => '1'
+        'usuario' => 'colsubsidio'
+        'password' => 'd8578edf8458ce06fbc5bb76a58c5ca4'
+        'email' => 'colsubsidio@colsubsidio.org'
+        'tipo' => 'member'
+        'operador' => 'colsubsidio'
+        'lastlogin' => null
+        'creado' => null
+        'actualizado' => null
+    )
+    [CActiveRecord:_related] => array()
+    [CActiveRecord:_c] => null
+    [CActiveRecord:_pk] => '1'
+    [CActiveRecord:_alias] => 't'
+    [CModel:_errors] => array()
+    [CModel:_validators] => null
+    [CModel:_scenario] => 'update'
+    [CComponent:_e] => null
+    [CComponent:_m] => null
+)
+in /home/content/39/9612339/html/modulos/vivienda/protected/components/UserIdentity.php (38)
+in /home/content/39/9612339/html/modulos/vivienda/protected/models/LoginForm.php (54)
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/SiteController.php (94)
+2013/03/06 08:15:12 [trace] [vardump] Users#1
+(
+    [password_repeat] => null
+    [CActiveRecord:_md] => CActiveRecordMetaData#2
+    (
+        [tableSchema] => CMysqlTableSchema#3
+        (
+            [schemaName] => null
+            [name] => 'users'
+            [rawName] => '`users`'
+            [primaryKey] => 'id'
+            [sequenceName] => ''
+            [foreignKeys] => array()
+            [columns] => array
+            (
+                'id' => CMysqlColumnSchema#4
+                (
+                    [name] => 'id'
+                    [rawName] => '`id`'
+                    [allowNull] => false
+                    [dbType] => 'int(11)'
+                    [type] => 'integer'
+                    [defaultValue] => null
+                    [size] => 11
+                    [precision] => 11
+                    [scale] => null
+                    [isPrimaryKey] => true
+                    [isForeignKey] => false
+                    [autoIncrement] => true
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'usuario' => CMysqlColumnSchema#5
+                (
+                    [name] => 'usuario'
+                    [rawName] => '`usuario`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'password' => CMysqlColumnSchema#6
+                (
+                    [name] => 'password'
+                    [rawName] => '`password`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(200)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 200
+                    [precision] => 200
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'email' => CMysqlColumnSchema#7
+                (
+                    [name] => 'email'
+                    [rawName] => '`email`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'tipo' => CMysqlColumnSchema#8
+                (
+                    [name] => 'tipo'
+                    [rawName] => '`tipo`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'operador' => CMysqlColumnSchema#9
+                (
+                    [name] => 'operador'
+                    [rawName] => '`operador`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'lastlogin' => CMysqlColumnSchema#10
+                (
+                    [name] => 'lastlogin'
+                    [rawName] => '`lastlogin`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'creado' => CMysqlColumnSchema#11
+                (
+                    [name] => 'creado'
+                    [rawName] => '`creado`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'actualizado' => CMysqlColumnSchema#12
+                (
+                    [name] => 'actualizado'
+                    [rawName] => '`actualizado`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+            )
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+        [columns] => array
+        (
+            'id' => CMysqlColumnSchema#4(...)
+            'usuario' => CMysqlColumnSchema#5(...)
+            'password' => CMysqlColumnSchema#6(...)
+            'email' => CMysqlColumnSchema#7(...)
+            'tipo' => CMysqlColumnSchema#8(...)
+            'operador' => CMysqlColumnSchema#9(...)
+            'lastlogin' => CMysqlColumnSchema#10(...)
+            'creado' => CMysqlColumnSchema#11(...)
+            'actualizado' => CMysqlColumnSchema#12(...)
+        )
+        [relations] => array()
+        [attributeDefaults] => array()
+        [CActiveRecordMetaData:_model] => Users#13
+        (
+            [password_repeat] => null
+            [CActiveRecord:_md] => CActiveRecordMetaData#2(...)
+            [CActiveRecord:_new] => false
+            [CActiveRecord:_attributes] => array()
+            [CActiveRecord:_related] => array()
+            [CActiveRecord:_c] => null
+            [CActiveRecord:_pk] => null
+            [CActiveRecord:_alias] => 't'
+            [CModel:_errors] => array()
+            [CModel:_validators] => null
+            [CModel:_scenario] => ''
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+    )
+    [CActiveRecord:_new] => false
+    [CActiveRecord:_attributes] => array
+    (
+        'id' => '16'
+        'usuario' => 'enriquesalazar'
+        'password' => 'e10adc3949ba59abbe56e057f20f883e'
+        'email' => 'enriquesalazar@fondoadaptacion.gov.co'
+        'tipo' => 'owner'
+        'operador' => 'fonada'
+        'lastlogin' => '2013-03-04 14:47:49'
+        'creado' => '2013-01-23 08:50:07'
+        'actualizado' => '2013-01-23 09:03:57'
+    )
+    [CActiveRecord:_related] => array()
+    [CActiveRecord:_c] => null
+    [CActiveRecord:_pk] => '16'
+    [CActiveRecord:_alias] => 't'
+    [CModel:_errors] => array()
+    [CModel:_validators] => null
+    [CModel:_scenario] => 'update'
+    [CComponent:_e] => null
+    [CComponent:_m] => null
+)
+in /home/content/39/9612339/html/modulos/vivienda/protected/components/UserIdentity.php (38)
+in /home/content/39/9612339/html/modulos/vivienda/protected/models/LoginForm.php (54)
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/SiteController.php (94)
+2013/03/06 08:15:50 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/06 08:15:50 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/06 08:15:54 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/06 08:15:54 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/06 08:20:01 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/06 08:20:01 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/06 08:20:01 [trace] [OpViviendasController actionUpdate $_POST] array
+(
+    'OpViviendas' => array
+    (
+        'id_bien_afec' => '2'
+        'depto' => 'CESAR'
+        'muni' => 'EL PASO'
+        'ref_catastral' => '11'
+        'num_viviendas' => '1'
+        'lat' => '500000'
+        'long' => '300001'
+        'vali_territorio' => 'Centro Poblado'
+        'vali_nomcentro' => 'Un centro poblado'
+        'vali_direccion' => 'Cr 1 # 1 - 1'
+        'verificado' => '0'
+        'vivienda_destruida' => '0'
+        'material' => ''
+        'destino_edificacion' => 'Residencial + Comercial'
+        'numero_hogares' => '2'
+        'vivienda_habitada' => '0'
+        'donde_vive' => 'Arriendo pagado con recursos propios'
+        'dire_residencia_actual' => 'Cr 2 # 2 - 2'
+        'direccion_correspondencia' => 'Cr 3 # 3 - 3'
+        'vali_telefono' => '55555555'
+        'vivienda_asegurada' => '1'
+        'vivienda_hipotecada' => '1'
+        'acueducto' => 'No convencional'
+        'alcantarillado' => 'No convencional'
+        'energia_electrica' => 'No convencional'
+        'vias_acceso' => 'No disponibles'
+        'zona_riesgo' => 'Media'
+        'amenaza' => 'Taludes'
+        'vali_afectacion' => 'Deslizamiento'
+        'tenencia' => ''
+        'elegible' => '0'
+        'motivo_no_elegible' => 'Atendido por otra entidad'
+        'atendido_por' => 'Otro'
+        'atendido_otro' => 'La Otra Entidad'
+        'fecha_publicacion' => ''
+        'medio_publicacion' => ''
+        'resolucion_asignacion_fonada' => '1111222'
+        'fecha_resolucion_asignada' => '2013-02-08'
+        'solucion_vivienda_contratada' => '0'
+        'solucion_vivienda_ejecucion' => '1'
+        'modalidad_atencion' => 'Reubicacion'
+        'nombre_proyecto' => ''
+        'direccion_proyecto' => ''
+        'tipo_solucion_otorgada' => 'No convencional'
+        'adaptacion_mitigacion' => ''
+        'caract_vivienda' => 'Nueva'
+        'valor_solucion_otorgada' => '41265000'
+        'gasto_servicios' => ''
+        'gasto_mitigacion' => ''
+        'aporte_fonada' => ''
+        'num_escritura' => '11122222'
+        'fecha_escritura' => '0000-00-00'
+        'notaria' => 'dwqdqqd'
+        'matricula_inmobiliaria' => '111222'
+        'fecha_entrega' => '2013-02-05'
+        'observaciones' => 'Este es un campo de observaciones'
+    )
+    'yt0' => 'Guardar'
+)
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (96)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/06 08:20:01 [warning] [application] OpViviendasController actionUpdate POST OpViviendas
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (97)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/06 08:20:01 [warning] [application] OpViviendasController actionUpdate model save true
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (119)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/06 09:24:16 [trace] [vardump] Users#1
+(
+    [password_repeat] => null
+    [CActiveRecord:_md] => CActiveRecordMetaData#2
+    (
+        [tableSchema] => CMysqlTableSchema#3
+        (
+            [schemaName] => null
+            [name] => 'users'
+            [rawName] => '`users`'
+            [primaryKey] => 'id'
+            [sequenceName] => ''
+            [foreignKeys] => array()
+            [columns] => array
+            (
+                'id' => CMysqlColumnSchema#4
+                (
+                    [name] => 'id'
+                    [rawName] => '`id`'
+                    [allowNull] => false
+                    [dbType] => 'int(11)'
+                    [type] => 'integer'
+                    [defaultValue] => null
+                    [size] => 11
+                    [precision] => 11
+                    [scale] => null
+                    [isPrimaryKey] => true
+                    [isForeignKey] => false
+                    [autoIncrement] => true
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'usuario' => CMysqlColumnSchema#5
+                (
+                    [name] => 'usuario'
+                    [rawName] => '`usuario`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'password' => CMysqlColumnSchema#6
+                (
+                    [name] => 'password'
+                    [rawName] => '`password`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(200)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 200
+                    [precision] => 200
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'email' => CMysqlColumnSchema#7
+                (
+                    [name] => 'email'
+                    [rawName] => '`email`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'tipo' => CMysqlColumnSchema#8
+                (
+                    [name] => 'tipo'
+                    [rawName] => '`tipo`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'operador' => CMysqlColumnSchema#9
+                (
+                    [name] => 'operador'
+                    [rawName] => '`operador`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'lastlogin' => CMysqlColumnSchema#10
+                (
+                    [name] => 'lastlogin'
+                    [rawName] => '`lastlogin`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'creado' => CMysqlColumnSchema#11
+                (
+                    [name] => 'creado'
+                    [rawName] => '`creado`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'actualizado' => CMysqlColumnSchema#12
+                (
+                    [name] => 'actualizado'
+                    [rawName] => '`actualizado`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+            )
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+        [columns] => array
+        (
+            'id' => CMysqlColumnSchema#4(...)
+            'usuario' => CMysqlColumnSchema#5(...)
+            'password' => CMysqlColumnSchema#6(...)
+            'email' => CMysqlColumnSchema#7(...)
+            'tipo' => CMysqlColumnSchema#8(...)
+            'operador' => CMysqlColumnSchema#9(...)
+            'lastlogin' => CMysqlColumnSchema#10(...)
+            'creado' => CMysqlColumnSchema#11(...)
+            'actualizado' => CMysqlColumnSchema#12(...)
+        )
+        [relations] => array()
+        [attributeDefaults] => array()
+        [CActiveRecordMetaData:_model] => Users#13
+        (
+            [password_repeat] => null
+            [CActiveRecord:_md] => CActiveRecordMetaData#2(...)
+            [CActiveRecord:_new] => false
+            [CActiveRecord:_attributes] => array()
+            [CActiveRecord:_related] => array()
+            [CActiveRecord:_c] => null
+            [CActiveRecord:_pk] => null
+            [CActiveRecord:_alias] => 't'
+            [CModel:_errors] => array()
+            [CModel:_validators] => null
+            [CModel:_scenario] => ''
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+    )
+    [CActiveRecord:_new] => false
+    [CActiveRecord:_attributes] => array
+    (
+        'id' => '16'
+        'usuario' => 'enriquesalazar'
+        'password' => 'e10adc3949ba59abbe56e057f20f883e'
+        'email' => 'enriquesalazar@fondoadaptacion.gov.co'
+        'tipo' => 'owner'
+        'operador' => 'fonada'
+        'lastlogin' => '2013-03-06 08:15:12'
+        'creado' => '2013-01-23 08:50:07'
+        'actualizado' => '2013-01-23 09:03:57'
+    )
+    [CActiveRecord:_related] => array()
+    [CActiveRecord:_c] => null
+    [CActiveRecord:_pk] => '16'
+    [CActiveRecord:_alias] => 't'
+    [CModel:_errors] => array()
+    [CModel:_validators] => null
+    [CModel:_scenario] => 'update'
+    [CComponent:_e] => null
+    [CComponent:_m] => null
+)
+in /home/content/39/9612339/html/modulos/vivienda/protected/components/UserIdentity.php (38)
+in /home/content/39/9612339/html/modulos/vivienda/protected/models/LoginForm.php (54)
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/SiteController.php (94)
+2013/03/06 09:24:17 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/06 09:24:17 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/06 09:49:01 [trace] [vardump] Users#1
+(
+    [password_repeat] => null
+    [CActiveRecord:_md] => CActiveRecordMetaData#2
+    (
+        [tableSchema] => CMysqlTableSchema#3
+        (
+            [schemaName] => null
+            [name] => 'users'
+            [rawName] => '`users`'
+            [primaryKey] => 'id'
+            [sequenceName] => ''
+            [foreignKeys] => array()
+            [columns] => array
+            (
+                'id' => CMysqlColumnSchema#4
+                (
+                    [name] => 'id'
+                    [rawName] => '`id`'
+                    [allowNull] => false
+                    [dbType] => 'int(11)'
+                    [type] => 'integer'
+                    [defaultValue] => null
+                    [size] => 11
+                    [precision] => 11
+                    [scale] => null
+                    [isPrimaryKey] => true
+                    [isForeignKey] => false
+                    [autoIncrement] => true
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'usuario' => CMysqlColumnSchema#5
+                (
+                    [name] => 'usuario'
+                    [rawName] => '`usuario`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'password' => CMysqlColumnSchema#6
+                (
+                    [name] => 'password'
+                    [rawName] => '`password`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(200)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 200
+                    [precision] => 200
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'email' => CMysqlColumnSchema#7
+                (
+                    [name] => 'email'
+                    [rawName] => '`email`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'tipo' => CMysqlColumnSchema#8
+                (
+                    [name] => 'tipo'
+                    [rawName] => '`tipo`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'operador' => CMysqlColumnSchema#9
+                (
+                    [name] => 'operador'
+                    [rawName] => '`operador`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'lastlogin' => CMysqlColumnSchema#10
+                (
+                    [name] => 'lastlogin'
+                    [rawName] => '`lastlogin`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'creado' => CMysqlColumnSchema#11
+                (
+                    [name] => 'creado'
+                    [rawName] => '`creado`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'actualizado' => CMysqlColumnSchema#12
+                (
+                    [name] => 'actualizado'
+                    [rawName] => '`actualizado`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+            )
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+        [columns] => array
+        (
+            'id' => CMysqlColumnSchema#4(...)
+            'usuario' => CMysqlColumnSchema#5(...)
+            'password' => CMysqlColumnSchema#6(...)
+            'email' => CMysqlColumnSchema#7(...)
+            'tipo' => CMysqlColumnSchema#8(...)
+            'operador' => CMysqlColumnSchema#9(...)
+            'lastlogin' => CMysqlColumnSchema#10(...)
+            'creado' => CMysqlColumnSchema#11(...)
+            'actualizado' => CMysqlColumnSchema#12(...)
+        )
+        [relations] => array()
+        [attributeDefaults] => array()
+        [CActiveRecordMetaData:_model] => Users#13
+        (
+            [password_repeat] => null
+            [CActiveRecord:_md] => CActiveRecordMetaData#2(...)
+            [CActiveRecord:_new] => false
+            [CActiveRecord:_attributes] => array()
+            [CActiveRecord:_related] => array()
+            [CActiveRecord:_c] => null
+            [CActiveRecord:_pk] => null
+            [CActiveRecord:_alias] => 't'
+            [CModel:_errors] => array()
+            [CModel:_validators] => null
+            [CModel:_scenario] => ''
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+    )
+    [CActiveRecord:_new] => false
+    [CActiveRecord:_attributes] => array
+    (
+        'id' => '16'
+        'usuario' => 'enriquesalazar'
+        'password' => 'e10adc3949ba59abbe56e057f20f883e'
+        'email' => 'enriquesalazar@fondoadaptacion.gov.co'
+        'tipo' => 'owner'
+        'operador' => 'fonada'
+        'lastlogin' => '2013-03-06 09:24:16'
+        'creado' => '2013-01-23 08:50:07'
+        'actualizado' => '2013-01-23 09:03:57'
+    )
+    [CActiveRecord:_related] => array()
+    [CActiveRecord:_c] => null
+    [CActiveRecord:_pk] => '16'
+    [CActiveRecord:_alias] => 't'
+    [CModel:_errors] => array()
+    [CModel:_validators] => null
+    [CModel:_scenario] => 'update'
+    [CComponent:_e] => null
+    [CComponent:_m] => null
+)
+in /home/content/39/9612339/html/modulos/vivienda/protected/components/UserIdentity.php (38)
+in /home/content/39/9612339/html/modulos/vivienda/protected/models/LoginForm.php (54)
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/SiteController.php (94)
+2013/03/06 09:49:01 [trace] [system.caching.CApcCache] Saving "Yii.CStatePersister./home/content/39/9612339/html/modulos/vivienda/protected/runtime/state.bin" to cache
+in /home/content/39/9612339/html/modulos/vivienda/protected/models/LoginForm.php (73)
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/SiteController.php (94)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/07 14:03:17 [trace] [system.caching.CApcCache] Saving "Yii.CStatePersister./home/content/39/9612339/html/modulos/vivienda/protected/runtime/state.bin" to cache
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/07 14:06:37 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/07 14:06:37 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/07 14:06:38 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/07 14:06:38 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/07 14:06:49 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/07 14:06:49 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/07 14:06:49 [trace] [OpViviendasController actionUpdate $_POST] array
+(
+    'OpViviendas' => array
+    (
+        'id_bien_afec' => '2'
+        'depto' => 'CESAR'
+        'muni' => 'EL PASO'
+        'ref_catastral' => '13'
+        'num_viviendas' => '1'
+        'lat' => '500000'
+        'long' => '300001'
+        'vali_territorio' => 'Centro Poblado'
+        'vali_nomcentro' => 'Codigo Dane (Departamento / Municipio)Codigo Dane (Departamento / Municipio)Codigo Dane (Departament'
+        'vali_direccion' => 'prueba'
+        'verificado' => '1'
+        'vivienda_destruida' => '0'
+        'material' => ''
+        'destino_edificacion' => 'Residencial + Comercial'
+        'numero_hogares' => '2'
+        'vivienda_habitada' => '1'
+        'donde_vive' => 'Arriendo subsidiado por el estado'
+        'dire_residencia_actual' => 'residencia actual'
+        'direccion_correspondencia' => 'Cr 3 # 3 - 3'
+        'vali_telefono' => 'ewfewfw'
+        'vivienda_asegurada' => '1'
+        'vivienda_hipotecada' => '1'
+        'acueducto' => 'No convencional'
+        'alcantarillado' => 'No convencional'
+        'energia_electrica' => 'No convencional'
+        'vias_acceso' => 'No disponibles'
+        'zona_riesgo' => 'Media'
+        'amenaza' => 'Taludes'
+        'vali_afectacion' => 'Deslizamiento'
+        'tenencia' => ''
+        'elegible' => '1'
+        'motivo_no_elegible' => 'Reporta mas de un bien'
+        'atendido_por' => 'Otro'
+        'atendido_otro' => 'otro'
+        'fecha_publicacion' => ''
+        'medio_publicacion' => ''
+        'resolucion_asignacion_fonada' => '1111222'
+        'fecha_resolucion_asignada' => '2013-02-08'
+        'solucion_vivienda_contratada' => '0'
+        'solucion_vivienda_ejecucion' => '1'
+        'modalidad_atencion' => 'Reubicacion'
+        'nombre_proyecto' => ''
+        'direccion_proyecto' => ''
+        'tipo_solucion_otorgada' => 'No convencional'
+        'adaptacion_mitigacion' => ''
+        'caract_vivienda' => 'Nueva'
+        'valor_solucion_otorgada' => '41265000'
+        'gasto_servicios' => ''
+        'gasto_mitigacion' => ''
+        'aporte_fonada' => ''
+        'num_escritura' => '11122222'
+        'fecha_escritura' => '0000-00-00'
+        'notaria' => 'dwqdqqd'
+        'matricula_inmobiliaria' => '111222'
+        'fecha_entrega' => '2013-02-05'
+        'observaciones' => 'Este es un campo de observaciones'
+    )
+    'yt0' => 'Guardar'
+)
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (96)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/07 14:06:49 [warning] [application] OpViviendasController actionUpdate POST OpViviendas
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (97)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/07 14:06:49 [warning] [application] OpViviendasController actionUpdate model save true
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (119)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/07 14:06:56 [warning] [application] OpViviendasController actionUpdate Model
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (87)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/07 14:06:56 [trace] [application] OpViviendasController actionUpdate 1
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (90)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/07 14:06:56 [trace] [OpViviendasController actionUpdate $_POST] array
+(
+    'OpViviendas' => array
+    (
+        'id_bien_afec' => '6'
+        'depto' => 'VALLE DEL CAUCA'
+        'muni' => 'CALI'
+        'ref_catastral' => '21'
+        'num_viviendas' => ''
+        'lat' => ''
+        'long' => ''
+        'vali_territorio' => ''
+        'vali_nomcentro' => ''
+        'vali_direccion' => ''
+        'verificado' => ''
+        'vivienda_destruida' => ''
+        'material' => ''
+        'destino_edificacion' => ''
+        'numero_hogares' => ''
+        'vivienda_habitada' => ''
+        'donde_vive' => ''
+        'dire_residencia_actual' => ''
+        'direccion_correspondencia' => ''
+        'vali_telefono' => ''
+        'vivienda_asegurada' => ''
+        'vivienda_hipotecada' => ''
+        'acueducto' => ''
+        'alcantarillado' => ''
+        'energia_electrica' => ''
+        'vias_acceso' => ''
+        'zona_riesgo' => ''
+        'amenaza' => ''
+        'vali_afectacion' => 'Vendaval'
+        'tenencia' => ''
+        'elegible' => ''
+        'motivo_no_elegible' => ''
+        'atendido_por' => ''
+        'atendido_otro' => ''
+        'fecha_publicacion' => ''
+        'medio_publicacion' => ''
+        'resolucion_asignacion_fonada' => ''
+        'fecha_resolucion_asignada' => ''
+        'solucion_vivienda_contratada' => ''
+        'solucion_vivienda_ejecucion' => ''
+        'modalidad_atencion' => ''
+        'nombre_proyecto' => ''
+        'direccion_proyecto' => ''
+        'tipo_solucion_otorgada' => ''
+        'adaptacion_mitigacion' => ''
+        'caract_vivienda' => ''
+        'valor_solucion_otorgada' => ''
+        'gasto_servicios' => ''
+        'gasto_mitigacion' => ''
+        'aporte_fonada' => ''
+        'num_escritura' => ''
+        'fecha_escritura' => ''
+        'notaria' => ''
+        'matricula_inmobiliaria' => ''
+        'fecha_entrega' => ''
+        'observaciones' => ''
+    )
+    'yt0' => 'Guardar'
+)
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (96)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/07 14:06:56 [warning] [application] OpViviendasController actionUpdate POST OpViviendas
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (97)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/07 14:06:56 [warning] [application] OpViviendasController actionUpdate model save false
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/OpViviendasController.php (123)
+in /home/content/39/9612339/html/modulos/vivienda/index.php (13)
+2013/03/07 14:13:02 [trace] [vardump] Users#1
+(
+    [password_repeat] => null
+    [CActiveRecord:_md] => CActiveRecordMetaData#2
+    (
+        [tableSchema] => CMysqlTableSchema#3
+        (
+            [schemaName] => null
+            [name] => 'users'
+            [rawName] => '`users`'
+            [primaryKey] => 'id'
+            [sequenceName] => ''
+            [foreignKeys] => array()
+            [columns] => array
+            (
+                'id' => CMysqlColumnSchema#4
+                (
+                    [name] => 'id'
+                    [rawName] => '`id`'
+                    [allowNull] => false
+                    [dbType] => 'int(11)'
+                    [type] => 'integer'
+                    [defaultValue] => null
+                    [size] => 11
+                    [precision] => 11
+                    [scale] => null
+                    [isPrimaryKey] => true
+                    [isForeignKey] => false
+                    [autoIncrement] => true
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'usuario' => CMysqlColumnSchema#5
+                (
+                    [name] => 'usuario'
+                    [rawName] => '`usuario`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'password' => CMysqlColumnSchema#6
+                (
+                    [name] => 'password'
+                    [rawName] => '`password`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(200)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 200
+                    [precision] => 200
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'email' => CMysqlColumnSchema#7
+                (
+                    [name] => 'email'
+                    [rawName] => '`email`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'tipo' => CMysqlColumnSchema#8
+                (
+                    [name] => 'tipo'
+                    [rawName] => '`tipo`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'operador' => CMysqlColumnSchema#9
+                (
+                    [name] => 'operador'
+                    [rawName] => '`operador`'
+                    [allowNull] => false
+                    [dbType] => 'varchar(50)'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => 50
+                    [precision] => 50
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'lastlogin' => CMysqlColumnSchema#10
+                (
+                    [name] => 'lastlogin'
+                    [rawName] => '`lastlogin`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'creado' => CMysqlColumnSchema#11
+                (
+                    [name] => 'creado'
+                    [rawName] => '`creado`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'actualizado' => CMysqlColumnSchema#12
+                (
+                    [name] => 'actualizado'
+                    [rawName] => '`actualizado`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+            )
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+        [columns] => array
+        (
+            'id' => CMysqlColumnSchema#4(...)
+            'usuario' => CMysqlColumnSchema#5(...)
+            'password' => CMysqlColumnSchema#6(...)
+            'email' => CMysqlColumnSchema#7(...)
+            'tipo' => CMysqlColumnSchema#8(...)
+            'operador' => CMysqlColumnSchema#9(...)
+            'lastlogin' => CMysqlColumnSchema#10(...)
+            'creado' => CMysqlColumnSchema#11(...)
+            'actualizado' => CMysqlColumnSchema#12(...)
+        )
+        [relations] => array()
+        [attributeDefaults] => array()
+        [CActiveRecordMetaData:_model] => Users#13
+        (
+            [password_repeat] => null
+            [CActiveRecord:_md] => CActiveRecordMetaData#2(...)
+            [CActiveRecord:_new] => false
+            [CActiveRecord:_attributes] => array()
+            [CActiveRecord:_related] => array()
+            [CActiveRecord:_c] => null
+            [CActiveRecord:_pk] => null
+            [CActiveRecord:_alias] => 't'
+            [CModel:_errors] => array()
+            [CModel:_validators] => null
+            [CModel:_scenario] => ''
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+    )
+    [CActiveRecord:_new] => false
+    [CActiveRecord:_attributes] => array
+    (
+        'id' => '18'
+        'usuario' => 'jaimeosorio'
+        'password' => '084fbd12a9eb1c92429ae64e136cb6df'
+        'email' => 'josorio@comfama.com.co'
+        'tipo' => 'member'
+        'operador' => 'comfama'
+        'lastlogin' => null
+        'creado' => null
+        'actualizado' => null
+    )
+    [CActiveRecord:_related] => array()
+    [CActiveRecord:_c] => null
+    [CActiveRecord:_pk] => '18'
+    [CActiveRecord:_alias] => 't'
+    [CModel:_errors] => array()
+    [CModel:_validators] => null
+    [CModel:_scenario] => 'update'
+    [CComponent:_e] => null
+    [CComponent:_m] => null
+)
+in /home/content/39/9612339/html/modulos/vivienda/protected/components/UserIdentity.php (38)
+in /home/content/39/9612339/html/modulos/vivienda/protected/models/LoginForm.php (54)
+in /home/content/39/9612339/html/modulos/vivienda/protected/controllers/SiteController.php (94)

@@ -1,0 +1,16 @@
+id_bien_afectado;apellido1;apellido2;nombre1;nombre2;numero_documento;este_campo_no_va_aqui;tipo_documento;parentesco;ostenta_tenencia;tipo_tenencia;estado_civil;edad;sexo;ingresos_mensuales;poblacion_especial
+2;MARIN;NULL;CARLOS;ALBERTO;6266396;;Cedula;Jefe(a) o cabeza del hogar;1;Propio totalmente pagado;Soltero;0;Masculino;0;
+2;OSORIO;NULL;ALEXANDRA;NULL;29435399;;Tarjeta de identidad;Pareja (c;1;No informa;Casado;0;Femenino;0;
+2;MARIN;OSORIO;JULIANA;ANDREA;1112880151;;Cedula extranjeria;Hijo(a), hijastro(a);1;Propio totalmente pagado;Divorciado;0;Hombre;0;
+2;MARIN;OSORIO;JORGE;LUIS;1112880706;;Pasaporte;Hijo(a), hijastro(a);1;No informa;Viudo;0;Mujer;0;
+2;MARIN;OSORIO;LUIS;EDIER;2147483647;;Cedula;Hijo(a), hijastro(a);1;Propio totalmente pagado;Union libre;0;Masculino;0;
+7;ARANZALEZ;COLLAZOS;EDUAR;OBERLY;94269162;;Tarjeta de identidad;Jefe(a) o cabeza del hogar;1;No informa;marital de hecho;0;Femenino;0;
+9;AMBUILA;NULL;HERNANDO;NULL;2414274;;Cedula extranjeria;Jefe(a) o cabeza del hogar;1;Propio totalmente pagado;Soltero;0;Hombre;0;
+2;ANGULO;BARONA;MARIELA;NULL;31838531;;Pasaporte;Jefe(a) o cabeza del hogar;1;No informa;Casado;0;Mujer;0;
+6;MUÑOZ;NULL;MARIA;ISABEL;66812795;;Cedula;Jefe(a) o cabeza del hogar;1;Propio totalmente pagado;Divorciado;0;Masculino;0;
+6;ZAPATA;MUÑOZ;YADIRA;STEFANIA;1144161691;;Tarjeta de identidad;Hijo(a), hijastro(a);1;No informa;Viudo;0;Femenino;0;
+6;ZAPATA;MUÑOZ;YULIET;NULL;0;;Cedula extranjeria;Hijo(a), hijastro(a);1;Propio totalmente pagado;Union libre;0;Hombre;0;
+6;MOSQUERA;ZAPATA;BREINER;YESID;1109669144;;Pasaporte;Nieto(a);1;No informa;marital de hecho;0;Mujer;0;
+6;ZAPATA;MUÑOZ;KERLY;YISED;0;;Cedula;Nieto(a);1;Propio totalmente pagado;Soltero;0;Masculino;0;
+1;MORALES;QUIRAMA;JOSE;LEONIDAS;2660909;;Tarjeta de identidad;Jefe(a) o cabeza del hogar;1;No informa;Casado;0;Femenino;0;
+1;AGUDELO;SERNA;TERESA;DEJESUS;29990302;;Cedula extranjeria;Pareja (c;1;Propio totalmente pagado;Divorciado;0;Hombre;0;

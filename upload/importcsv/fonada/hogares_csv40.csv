@@ -1,0 +1,7 @@
+id_bien_afectado;apellido1;apellido2;nombre1;nombre2;tipo_documento;numero_documento;estado_civil;edad;sexo;ocupacion;ingresos_mensuales;poblacion_especial;ostenta_tenencia;observaciones;
+2;OSORIO;Castro;ALEXANDRA;maria;Tarjeta de identidad;29435399;Casado;0;Femenino;Independiente;0;Afrocolombiano;1;;
+2;MARIN;OSORIO;JORGE;LUIS;Tarjeta de identidad;1112880706;Casado;18;Femenino;Estudiante;9999;Afrocolombiano;;;
+2;MARIN;OSORIO;LUIS;EDIER;Cedula;2147483647;Union libre;18;Masculino;Estudiante;4;Indigena;1;;
+2;ANGULO;BARONA;MARIELA;Maria;Tarjeta de identidad;31838531;Viudo;14;Masculino;Independiente;0;Rom;;;
+2;MARIN;;CARLOS;ALBERTO;Cedula;6266396;Soltero;24;Masculino;Independiente;33333;Rom;1;;
+2;MARIN;OSORIO;JULIANA;ANDREA;Cedula;1112880151;Soltero;6;Masculino;Independiente;3442;Madre comunitaria;1;;

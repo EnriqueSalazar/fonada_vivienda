@@ -1,0 +1,6 @@
+id_bien_afectado;apellido1;apellido2;nombre1;nombre2;numero_documento;tipo_documento;parentesco;ostenta_tenencia;tipo_tenencia;edad;ingresos_mensuales;poblacion_especial
+2;MARIN;NULL;CARLOS;ALBERTO;6266396;Cedula;Jefe(a) o cabeza del hogar;1;Propio totalmente pagado;0;0;
+2;OSORIO;NULL;ALEXANDRA;NULL;29435399;Tarjeta de identidad;Pareja (c;1;No informa;0;0;
+2;MARIN;OSORIO;JULIANA;ANDREA;1112880151;Cedula;Hijo(a), hijastro(a);1;Propio totalmente pagado;0;0;
+2;MARIN;OSORIO;JORGE;LUIS;1112880706;Tarjeta de identidad;Hijo(a), hijastro(a);1;No informa;0;0;
+2;MARIN;OSORIO;LUIS;EDIER;2147483647;Cedula;Hijo(a), hijastro(a);1;Propio totalmente pagado;0;0;
